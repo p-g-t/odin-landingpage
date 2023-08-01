@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* puts the 6 sections in a column */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* adds padding - section padding in each section */
+
+header,
+.footer {
+  padding: 0px 180px;
+}
+
+/* creates the flexbox for the nav bar and logo */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding-top: 16px;
+}
+
+.header-logo {
+  margin-right: auto;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+nav li {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f9faf8;
+}
+
+/* section1 hero flexbox */
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 48px;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 72px 180px;
+}
+
+.section1 img {
+  max-width: 600px;
+}
+
+.section1-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.section1-text p {
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 10px;
+  color: #e5e7eb;
+}
+
+.sign-up {
+  background-color: #3882f6;
+  font-size: 14px;
+  font-weight: 700;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+  padding: 8px 32px;
+  color: #f9faf8;
+}
+
+/* Information boxes */
+.section2 {
+  background-color: #f9faf8;
+  color: #1f2937;
+  text-align: center;
+  padding: 72px 180px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 48px;
+}
+
+.section2-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 48px;
+}
+
+/* fixes images not scaling down the flexbox, accompanied by width and height parameters on the images in .box img */
+.box {
+  min-width: 0;
+}
+
+.box img {
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+  width: 100%; 
+  height: auto;
+}
+
+.box p {
+  font-size: 18px;
+  padding: 8px;
+}
+
+/* section 3 quote */
+.section3 {
+  background-color: #e5e7eb;
+  padding: 72px 180px;
+}
+
+blockquote p {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 200; 
+}
+
+blockquote footer {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: end;
+}
+
+/* section 4 CTA */
+.section4 {
+  background-color: #3882f6;
+  color: #f9faf8;
+  margin: 72px 180px;
+  padding: 36px 72px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+}
+
+.section4-text {
+  flex: 3;
+}
+
+.sign-up2 {
+  flex: 1;
+  width: 100%;
+  min-width: 96px;
+  max-width: 128px;
+  background-color: #3882f6;
+  border: 3px solid #f9faf8;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  color: #f9faf8;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 32px;
+}
